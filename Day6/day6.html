@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS+Guides&display=swap" rel="stylesheet">
+    <style>
+        /*
+        css flexbox
+        it is used to create one dimentional layout model web pages
+        it contains parent properties(fles container) and child prpperties(flex items)
+
+
+        1)display:flex;
+        it will acreate a flex container and change the direction into row 
+
+        2)
+        Flex direction
+        it will control direction of the flex items
+        flex-direction:row;
+        flex-direction:column;
+        flex-direction:row-reverse;
+        flex-direction:column-reverse;
+
+        4)
+        it will control the child items on creoss axis
+        align-items: center;
+        align-items: stretch;
+        align-items: end;
+        align-items: start;
+
+        perfect centering
+        display:flex;
+        justify-content:centre;
+        aligh-ietems:centre;
+
+        5)flex-wrap
+        it will wrap items to the next row
+        flex-wrap:wrap;
+        flex-wrap:wrap-reverse;
+
+        6)align content
+        it will cotrol the child irems onna cross axis
+        align-content: center;
+        align-content: start;
+        align-content: end;
+        align-content: space-between;
+        align-content: space-evenly;
+        align-content: space-around;
+
+        7)gap
+        it will create the space between the rows and columns
+        gap:10px 20px;
+        row column;
+
+        8)
+        flex-flow:wrap direction;
+        flex-flow:wrap-reverse column;
+        flex-flow:wrap
+
+
+        chilkd 
+        */
+        .Parent{
+            display:flex;
+            flex-direction:column;
+            flex-direction:row-reverse;
+            flex-direction:column-reverse;
+            flex-direction:row;
+            justify-content: center;
+            justify-content: end;
+            justify-content: start;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            background: lightpink;
+            height:600px;
+            align-items: center;
+            align-items: center;
+            align-items: stretch;
+            align-items: end;
+            align-items: start; 
+            flex-wrap:wrap;
+            flex-wrap:wrap-reverse;
+            align-content: center;
+            align-content: start;
+            align-content: end;
+            align-content: space-between;
+            align-content: space-evenly;
+            align-content: space-around;
+            align-items: center;
+            gap: 20px;
+
+            
+
+        }
+        .class{
+            background: lightgreen;
+            padding: 20px;
+            flex-basis: 20%;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ul{
+            display: flex;
+            gap: 20px;
+        }
+        p{
+            font-family: "Playwrite DE SAS Guides", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        /*
+        units
+        absolute units-fixed
+        px,cm,m,inch
+        
+
+        relative units
+        %-it always depensent on th parent 
+        %-width,padding,margin
+        viewport-it will depend on the view port
+        vw-width
+        vh-height
+        rem-fonts
+
+
+        */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Business Title</h1>
+        <ul>
+            <li>home <i class="fa-solid fa-house-tsunami"></i></li>
+            <li>about <i class="fa-solid fa-circle-info"></i></li>
+            <li>services <i class="fa-brands fa-whatsapp"></i></li>
+        </ul>
+    </header>
+    <div>
+        <div class="Parent">
+            <div class="class">content 1</div>
+            <div class="class">content 2</div>
+            <div class="class">content 3</div>
+            <div class="class">content 4</div>
+            <div class="class">content 5</div>
+            <div class="class">content 6</div>
+            <div class="class">content 7</div>
+            <div class="class">content 8</div>
+        </div>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus esse eveniet animi soluta incidunt quam sit minus dolorem exercitationem aliquam cumque, eius accusamus totam eos error, ullam magni quas dicta?</p>
+</body>
+</html>

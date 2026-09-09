@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="" id="registration">
+        <input type="text" id="inp1" placeholder="enter ur name">
+        <input type="text" id="inp2" placeholder="enter ur password">
+        <button type="submit">Submit</button>
+    </form>
+   
+
+    <script>
+        /*console.log(registration)
+        registration.onsubmit=function(event){
+            event.preventDefault()  //It will prevent the automic form submission
+            console.log('from submitted')
+
+            //how to acces the values
+            //1)using target
+            console.log(event.target[0].value)
+             console.log(event.target[1].value)
+
+            //using id
+            console.log(inp1.value)
+             console.log(inp2.value)
+
+        }*/
+       let emailpattern=/[a-zA-Z0-9.]+@[a-z]+\.[a-z]{3}/
+       let email='johndeo234@gmail.com'
+       console.log(email.match(emailpattern))
+
+    let passwordpattern = /(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&]).{8,12}/
+    let password='Jessy@123'
+    console.log(password.match(passwordpattern))
+
+       let pattern=/[0-9]{10}/
+       let text='9087564321'
+       console.log(text.match(pattern))
+    </script>
+</body>
+</html>

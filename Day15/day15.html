@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    /*
+    code -2ways
+    1)synchronous
+    --which excutes line by line and doesn,t take  time
+    2)asynchoronous
+    --which executes parallely and takes time
+
+    event loop mechanism
+    1)call stack
+    2)web api
+    3)
+    promises
+    promises represents the eventual completion or failure of an asynchrous operation
+    1)creating a promise
+    2)consuming a promis
+    */
+    <script>
+        let prom=new promise((res,rej)=>{
+        let val=10
+        if(val==100){
+            res('promise is resolved')
+        }else{
+            rej('promise is rejected')
+        }
+    })
+
+    //prom.then((fullfilled)=>console.log(fullfilled))
+    //    .catch((error)=>console.log(error))
+    
+    // async -it will make the function as asynchronous 
+    async function getprom() {
+        let a=await prom //wait -it puses an execution untill the promise is settled
+        console.log(a)
+    }
+    getprom()
+    </script>
+    
+</body>
+</html>

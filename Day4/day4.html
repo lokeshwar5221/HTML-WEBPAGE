@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+    3 ways of internal css
+    1)inline css
+    styles are added to
+
+    2)internal css
+    styles are add to the document using style tag
+    
+    3)external css
+    styles are added to external css file
+
+    types of selectors
+    1)simple selector
+        
+    2)combinator
+    3)pseudo class
+    -->
+    <link rel="stylesheet" href="demo.css">
+    <style>
+        /* h2{
+            color:yellow;
+            background:lightpink;
+        }
+        div{
+            color: aqua;
+            background: pink;
+        } 
+        .el1{
+            color: violet;
+        }
+        .el2{
+            background: black;
+            color:white;
+        }
+        #demo{
+            color:violet
+        }
+        #d1{
+            color: blue;
+        }
+        .cl{
+            color: red;
+        }
+        div{
+            color: green;
+        }
+        /* 
+        id is having high specificity
+        class is having high specificity  than tagname
+        
+
+        box model
+        3)border
+        radius
+        style
+        colour
+        width
+        border
+
+        */
+        div{
+            /*background: lightpink;*/
+            width: 50%;
+            height: 200px;
+            padding: 30px;
+            padding: 10px 20px 30px 40px;
+            padding: 10px 20px 30px;
+            padding: 10px 20px ;
+            border: 7px solid black;
+            border: 7px double black;
+            border: 7px dotted black;
+            border: 7px dashed black;
+            border: 7px ridge black;
+            border: 7px groove black;
+            border: 7px inset black;
+            border: 7px outset black;
+            border-radius: 50%;
+            margin: 20px;
+            margin: 10px 20px 30px 40px;
+            margin: 10px 20px 30px;
+            margin: 10px 20px;
+            height: 500px;
+            width: 100%;
+
+            background-image: url('images.jpg');
+            background-repeat: no-repeat;
+             
+            background-attachment: fixed;
+            background-size: 100% 100%;
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <!-- <div style="color: red;background: black;">div container</div>
+    <h1 style="color:red;background:black;">Heading 1</h1>
+    <h2>heading 2</h2>
+    <h2>heading 3</h2>
+    <h3>heading 4</h3> -->
+    <div class="c1">div container</div>
+    <div id="d1" class="c1">div container</div>
+    <h1 class="el1 el2" id="demo">heading 1</h1>
+    <h2 class="el2">heading 2</h2>
+    <h2>heading 3</h2>
+    <h3 class="el1">heading 4</h3>
+</body>
+</html>

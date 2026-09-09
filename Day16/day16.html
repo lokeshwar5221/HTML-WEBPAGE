@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        var
+        • Redeclaration is allowed
+        • Assignment and reassignment is allowed
+        • Hoisting is allowed
+        • It is hoisted and initialized with undefined
+
+
+        let
+        • Redeclaration is not allowed X
+        • Assignment and reassignment is allowed
+        • Hoisting is allowed, but it is in TDZ (Temporal Dead Zone)
+        • It cannot be accessed before initialization
+
+
+        const
+        • Redeclaration is not allowed X
+        • Assignment and reassignment is not allowed X
+        • Only initialization is allowed
+        • Hoisting is allowed, but it is in TDZ (Temporal Dead Zone)
+
+
+        scope
+        it is life or accessibility of an veriable
+        1)global scope-we can access from anywhere-var,let,const
+        2)
+
+
+
+        higher order functions
+        a function which  takes another function as an argument
+        1)map
+        map is ied
+
+        2)filter
+        filterr is used to create a filtered array by applyin boolean 
+        function
+
+       
+       function classroom(){
+        let s1='loki'
+        let s2='sailu'
+        console.log(s1)
+        console.log(s2)
+       }
+       classroom()
+       console.log(s1)
+
+
+       let pfs4std='loki'
+       localStorage.setItem('name',pfs4std)
+
+        
+
+        let pfs4students=[
+            {name:'loki',id:123},
+            {name:'sailu',id:143},
+            {name:'roxx',id:173}
+        ]
+        localStorage.setItem('pfs4students',JSON.stringify(pfs4students))
+
+        let arr=["html",'css','js','react']
+        let newarr=arr.map(val,ind,ar)=>{
+
+        }
+
+        */
+       let arr=[1,2,3,4,5,6,7,8]
+       let filtered=arr.filter((val,ind,ar))=>{
+        return val%2==0
+       }
+
+    </script>
+    
+    
+</body>
+</html>

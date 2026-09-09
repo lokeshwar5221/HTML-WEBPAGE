@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><!--
+    html
+    elements-open content closing
+    types of tags - pair tags,self closing tags
+    hedings
+    paragraph
+    list tags - ordered list,unordered list
+
+    tags are diveided based on behaviour 
+    1)block level elements-
+    are the elements which occupies total spape and always
+    start on new line
+    div,heading,p,table,form
+
+    2)inline element
+    aftre elements which takes necessary space and dont start on a new line
+    span,a,img,input
+
+    div-block 
+    division element thst is used to group the element for 
+
+    forms
+    it is used to collect the information from the user and allowing user to submit the data to the serevr
+
+    login,register,contact,curd operations
+
+    forms are defined with form tag
+    -->
+    <form action="" method="post">
+        <label for="loki">enter username:,</label>
+        <input type="text" id="loki" placeholder="enter your name"><br>
+        <label for="lo">enter ph number</label>
+        <input type="number" id="lo" placeholder="enter your ph nb"><br>
+        <label for="ki">enter mail</label>
+        <input type="email" id="ki"  placeholder="emnter your mail"><br>
+        <label for="en">enter password</label>
+        <input type="password" id="en" placeholder="enter password"><br>
+        <label for="kk">book your slot</label>
+        <input type="datetime-local" id="kk" placeholder="select slot"><br>
+        <label for=""></label>
+        <button type="submit">submit</button>
+    </form>
+
+    <form action="">
+        <div>select your stack</div>
+        <input type="radio" name="skillset" id="py" value="python">
+        <label for="py">python stack</label><br>
+        <input type="radio" name="skillset" id="jv" value="java">
+        <label for="jv">java stack</label><br>
+        <input type="radio" name="skillset" id="mr" value="mern">
+        <label for="mr">mern stack</label><br>
+        <button type="submit">submit</button>
+        
+        <div>select your skills</div>
+        <input type="checkbox" name="skills" value="html">
+        <label for="">html</label>
+        <input type="checkbox" name="skills" value="css">
+        <label for="">css</label>
+        <input type="checkbox" name="skills" value="js">
+        <label for="">js</label><br>
+        <button type="submit">submit</button> <br>
+        
+        <textarea name="" id="" cols="30" rows="5" placeholder="enter description"></textarea>
+        <br>
+        <label>select youe education</label>
+        <select name="edu" id="">
+            <option value="btech">btech</option>
+            <option value="degree">degree</option>
+            <option value="inter">inter</option>
+
+        </select>
+        <br>
+        <input type="checkbox">
+        <label for="">i agree to terms and conditions</label>
+    </form>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*
+    functions
+    function is a reusable block of code that is 
+    used to perform specific action when something invokes it
+    
+    function are defined with function keyword followed by function
+    name followed by() may include parameters and followed by block of code
+    
+    //funcction decleration
+    function greet(){
+    cosole.log('hello user welcome to the page')
+    }
+    //function calling
+    greet()
+    
+    key points in function
+    1)function name stores function defination
+    console.log(greet)//defination
+    greet()//calling
+    2)logging of function calling will give you the return value
+
+    types of functions
+    1)named functions
+    2)anonynmous function
+    3)arrow function
+    4)iife
+
+    */
+
+    function greet(){
+        console.log('hello')
+    }
+    greet()
+    console.log(greet)
+    function greet(name){
+        console.log(`hello ${name}`)
+    }
+    greet('loki')
+    greet('sailu')
+
+    function greet(name){
+        console.log(`hii ${name}`)
+        return 'hello world'
+    }
+    console.log(greet)
+    greet('roxx')
+    console.log(greet('raj'))
+
+    //anonymous
+    let sum=function(a,b){
+        console.log(a+b)
+    }
+    sum(3,4)
+    sum(1,2)
+
+    //arrow function
+    //we can eleminate {} and it takes return keyword
+    //we can eliminate() if there is a simgle parameter
+    let add=(a,b)=>a+b
+    console.log(add(5,10))
+
+    //immediate invoke function expression-iife
+    // (function (){
+    //     console.log('hello loki welcome to js')
+    // })();
+
+    //callbeck
+    //callback is when a function decleration is pased to another
+    //function as an argument and later executes in outer fun
+
+    function addtocart(callback){
+        console.log('add to cart')
+        callback(order)
+    }
+    function payment(callback){
+        console.log('payment done')
+        callback(order)
+
+    }
+    function order(){
+        console.log('order placed')
+    }
+    addtocart(payment)
+
+    //closure 
+    //when an inner function  having access to the variable
+    //which is defined in outer function and can able to remember and change the value
+    function outer(){
+        let count=0
+        console.log('outer')
+        return function(){
+            count++
+            console.log(count)
+            console.log('inner')
+        }
+    } 
+    a=outer()
+    a()
+    a()
+    a()
+    </script>
+</body>
+</html>

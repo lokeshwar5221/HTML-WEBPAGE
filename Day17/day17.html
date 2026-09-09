@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <script>
+        /*
+        
+        //swallow copy
+        let a=['html','css']
+        let b=a
+        b[0]='react'
+        console.log(a)
+        console.log(b)
+        //deep copy
+        let c=['html','css']
+        let d=[...c]
+        d[0]='react'
+        console.log(c)
+        console.log(d)
+        
+       //swallow copy
+       let obj1={
+        name:'loki'
+       }
+       let obj2={...obj1}
+       obj2.name='sailu'
+       console.log(obj1)
+       console.log(obj2)
+       
+        spread operator
+        it is used to spread the values of itterable(string,obj,arrays)
+        it is used for deep copy in and object and array
+        it is used for merging
+        
+       let frontend=['html','css','js']
+       let backend=['python','flask']
+       let b=[...frontend,...backend,'my sql']
+       console.log(b)
+
+       let obj1={
+        name:'loki'
+       }
+       let obj2={
+        age:21
+       }
+       console.log({...obj1,...obj2})
+
+       
+      let data=[[['html','css'],['js','react']],[['python','java'],['django','flask','springbppt']]]
+      let [[static,dynamic],[language,framework]]=data
+      console.log(static)
+      console.log(dynamic)
+      console.log(language)
+      console.log(framework)
+*/
+      let obj={
+        name:'loki',
+        age:21,
+        address:{
+            city:'vizag',
+            state:'ap'
+        }
+      }
+      let{name:nm,age,address}=obj
+      console.log(address)
+
+    </script>
+</body>
+</html>
